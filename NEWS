@@ -1,0 +1,40 @@
+QBOS -- History of visible changes.
+
+Copyright (C) 2006, Jorge Riquelme Santana <totex@totex.cl>
+See the end for copying conditions.
+
+Please send QBOS bug reports to totex@totex.cl.
+
+
+Version 0.11 beta
+
+* Finalizada pantalla HighScores
+  - Cambio del fondo de pantalla de HighScores
+* Finalizada pantalla Setup
+* Cambio en el criterio para pasar de nivel, ahora sucede cada 20 lineas
+  hechas, y no cada 100 puntos. Esto permite que diferentes usuarios puedan
+  avanzar etapas pero con puntajes diferentes que reflejen su calidad de juego.
+  Ademas, se modifico la formula que calcula el puntaje, dejando tambien en
+  funcion del nivel(antes solo dependia del numero de lineas)
+
+
+Version 0.10 alpha
+
+* emmm...
+
+
+-------------------------------------------------------
+Copying information:
+
+Copyright (C) 2006, Jorge Riquelme Santana <totex@totex.cl>
+
+   Permission is granted to anyone to make or distribute verbatim copies
+   of this document as received, in any medium, provided that the
+   copyright notice and this permission notice are preserved,
+   thus giving the recipient permission to redistribute in turn.
+
+   Permission is granted to distribute modified versions
+   of this document, or of portions of it,
+   under the above conditions, provided also that they
+   carry prominent notices stating who last changed them.
+

@@ -1,0 +1,56 @@
+
+* TGE
+
+- Desacoplar tge del juego!. En este minuto toda la captura y proceso de eventos
+  que afectan los diferentes objetos definidos en tge se hace barbaricamente en las
+  clases *Screen del juego. Es necesario encapsular completamente los "tge::Widgets",
+  implementar algo asi como un sistema de señales y callbacks(o slots... o listeners,
+  o algo por el estilo :p) que permita tratar la captura y tratamiento de eventos de
+  forma transparente.
+
+- Usar cairo para dibujar los diferentes widgets, ya que comparativamente  sdl se queda
+  corto en muchos aspectos. Son muy atractivas las posibilidades de cairo para manejar
+  texto o dibujar primitivas; las opciones que cubren estas tareas en sdl(como SDL-ttf
+  o SDL-gfx) definitivamente son muy inferiores a cairo.
+
+- Mejorar los "tge::Widgets" en muchos aspectos:
+       - Agregar un sistema de focus
+       - Implementar Layout managers
+       - Implementar margenes, paddings y bordes
+       - ... o buscar alguna biblioteca que haga el trabajo, como "cegui".
+
+- Implementar un sistema de particulas paara hacer explosiones y otros "nice effects"
+
+
+
+* JUEGO
+
+- Internacionalizar con gettext
+
+- Agregar sonidos y musica
+
+- Agregar un par de efectos al juego:
+       - Puntaje "volador" al hacer una linea, que desaparesca gradualmente
+       - Un contador estilo 3,2,1 go! al inicio del juego
+
+- Implementar modalidades de juego no convencionales: bombas, rockets y otras gracias,
+  que intervengan en el juego de alguna forma para hacerlo mas interesante.
+
+- Desarrollar algun tipo de multiplayer.
+
+- Hacer alguna especia de ranking global en linea.
+
+- Agregar alguna especio de boton "volver" en las pantallas, que explicitice la funcion
+  que cumple ESCAPE
+
+- Sofisticar aun mas la formula de puntaje:
+     - contar de alguna manera las caidas rapidas
+     - dar puntaje por "combos", hacer lineas en jugadas consecutivas
+
+- Permitir que el juego se pueda manejar completamente con el teclado(rediseñar pantalla
+  opciones y demases que necesitan mouse por obligacion)
+
+- Dejar el juego en pausa automaticamente cuando la aplicacion no este activa
+
+- Arreglar los "errores" conocidos (ve README)
+
