@@ -118,7 +118,7 @@ void tge::Brush::paint(SDL_Surface* surface,const SDL_Rect* rect)
 }
 
 
-tge::Brush::Brush& tge::Brush::operator=(const Brush& brush)
+tge::Brush& tge::Brush::operator=(const Brush& brush)
 {
 	if(!use_color_)
 		SDL_FreeSurface(tile_);
