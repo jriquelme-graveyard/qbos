@@ -5,7 +5,7 @@
  *
  *
  *
- * Copyright (C) 2006, Jorge Riquelme Santana <totex@totex.cl>
+ * Copyright (C) 2006, Jorge Riquelme Santana <jriquelme@totex.cl>
  * 
  * QBOS is free software; you can redistribute it and/or 
  * modify it under the terms of the GNU General Public License 
@@ -67,7 +67,7 @@ int main(int argc,char** argv)
 	Screen* screen;
 
 	cout<<PACKAGE_STRING<<" beta"<<endl<<endl
-		<<"Jorge Riquelme Santana  <totex@totex.cl>"<<endl
+		<<"Jorge Riquelme Santana  <jriquelme@totex.cl>"<<endl
 		<<"http://www.totex.cl"<<endl<<endl;
 #ifdef HAVE_CHDIR
 	if(chdir(DATADIR))

@@ -1,4 +1,4 @@
-# Copyright (C) 2006 Jorge Riquelme Santana <totex@totex.cl>
+# Copyright (C) 2006 Jorge Riquelme Santana <jriquelme@totex.cl>
 #  
 # This file is free software; as a special exception the author gives
 # unlimited permission to copy and/or distribute it, with or without 
