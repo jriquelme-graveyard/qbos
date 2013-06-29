@@ -1,77 +1,40 @@
-###### SOBRE QBOS ######
+###### ABOUT QBOS ######
+
+QBOS is a simple tetris clon I made in my free time, when I was young and
+innocent (I publish this just to "not forget" :p)
 
 
-QBOS es un simple clon de tetris, producto de mis horas de ocio. Es la realizacion
-"en serio" de un trabajo anterior llamado "TetriX". En el futuro quiero añadirle
-caracteristicas que lo hagan mas entrenido y menos "clasico". Esta version esta
-dedicada a mi prima Dany, por ser el unico especimen sobre la faz de la tierra que
-pesca en serio mis juegos chantas :) 
-
-QBOS es software libre, liberado bajo licencia GPL, por favor ve el archivo COPYING
-para mas detalles.
-
-
-###### INSTALACION ######
+###### INSTALL ######
 
 * Windows
 
-Solo necesitas ejecutar setup.exe y apretar siguiente, siguiente ... hasta el infinito
-y el mas alla. Luego abre el juego desde el menu inicio.
+There's a setup.exe in http://games.softpedia.com/get/Freeware-Games/Qbos.shtml
 
 
 * Linux
 
-Para compilar QBOS necesitas las bibliotecas SDL, SDL_image y SDL_ttf. Luego el conjuro
-tradicional:
+To compile this, you need SDL, SDL_image and SDL_ttf. In Ubuntu you have to install:
 
-	$ make
-	$ make install
+  $ sudo apt-get install build-essential libsdl-image1.2-dev libsdl-ttf2.0-dev \
+    libsdl1.2-dev
 
+Then, proceed with the usual spell:
 
-
-###### COMO JUGAR ######
-
-El juego no tiene ninguna ciencia, es un tetris clasico. La configuracion de las teclas por
-defecto es:
-
- - LEFT ARROW: mover la pieza a la izquierda
- - RIGHT ARROW: mover la pieza a la derecha 
- - DOWN ARROW: bajar la pieza 10px
- - UP ARROW: rotar la pieza en sentido horario
- - LEFT CONTROL: bajar la pieza de golpe
-
- Puedes configurar las teclas de movimiento a tu antojo en la pantalla "Opciones". Ahi tambien
- puedes especificar dos valores importantes que tienen que ver con la sensibilidad del teclado:
-
- - INTERVALO REPETICION: indica la cantidad de milisegundos que hay entre cada repeticion de la
-                         tecla que esta presionada, determina la rapidez de repeticion.
- - RETRASO REPETICION: indica la cantidad de milisegundos que se debe mantener presionada una
-                       tecla antes de que se inicie la repeticion.
-
-Los valores de INTERVALO y RETRASO de REPETICION tienen impacto en el juego, sobre todo cuando
-el nivel es alto y las piezas caen rapidamente, pues ahi es necesario mover las piezas en sentido
-horizontal rapidamente; valores erroneos haran la repeticion demasiado lenta lo que impedira
-jugar rapido, o al contrario, haran al teclado demasiado sensible. En todo caso el boton
-"Valores por Defecto" resetea las opciones.
-
- Las teclas ENTER y ESCAPE se reservan para funcionalidades asociadas con las pantallas y los
- dialogos, ENTER selecciona el boton por defecto del menu o un dialogo, ESCAPE cierra la pantalla
- o dialogo actual. La tecla PAUSE tiene el uso tradicional.
+  $ ./configure
+  $ make
+  $ make install
 
 
+###### KNOWN BUGS ######
 
-###### "ERRORES" CONOCIDOS ######
+- The movement of the blocks is a bit odd, you can't rotate a block when his resulting
+  place will be out of the screen, that's why sometimes when a block is next to the
+  borders it can't be rotated.
 
-- No se pueden girar las piezas si no tienen "espacio", o sea si el giro implica salir que una parte
-  de la pieza quede fuera del area de juego, por eso a veces cuando las piezas estan en los bordes
-  no pueden ser rotadas. Este comportamiento, aunque no es un error, sera cambiado. En el futuro
-  las piezas se correrar sola para permitir el giro deseado.
+- Sometimes, the blocks can be moved after hitting the ground; this behavior is
+  completely random xD.
 
-- El cuanto de tiempo en que una pieza puede ser movida en el "suelo" cuando ya choco es variable.
-  De hecho esto no esta considerado en el juego y obedece al azar en este minuto(mejor dicho a los
-  timpos del que existen entre la renderizacion del juego y la captura de eventos)
+- The Options screen permits the association of one key to two different movements
+  without any error message.
 
-- La pantalla Opciones permite asociar una tecla a dos o mas movimientos sin reclamar O_x
-
-- Los dialogos permiten que se le ingresen cantidades arbitrarias de letras o numeros, esto obviamente
-  se debe acotar.
+- There isn't any validation in the input fields :o

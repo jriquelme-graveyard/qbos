@@ -8,14 +8,11 @@ Please send QBOS bug reports to jriquelme@totex.cl.
 
 Version 0.11 beta
 
-* Finalizada pantalla HighScores
-  - Cambio del fondo de pantalla de HighScores
-* Finalizada pantalla Setup
-* Cambio en el criterio para pasar de nivel, ahora sucede cada 20 lineas
-  hechas, y no cada 100 puntos. Esto permite que diferentes usuarios puedan
-  avanzar etapas pero con puntajes diferentes que reflejen su calidad de juego.
-  Ademas, se modifico la formula que calcula el puntaje, dejando tambien en
-  funcion del nivel(antes solo dependia del numero de lineas)
+* HighScores screen
+* Setup screen
+* Different criteria to reach a new level (now each 20 lines, not each
+  100 points). New points calculation method (levels taken in account,
+  before only number of lines were considered)
 
 
 Version 0.10 alpha
