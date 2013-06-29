@@ -5,28 +5,28 @@ QBOS is a simple tetris clon I made in my free time, when I was young and
 innocent (I publish this just to "not forget" :p)
 
 
-###### INSTALL ######
+## INSTALL ##
 
-* Windows
+### Windows ###
 
 There's a setup.exe in http://games.softpedia.com/get/Freeware-Games/Qbos.shtml
 
 
-* Linux
+### Linux ###
 
 To compile this, you need SDL, SDL_image and SDL_ttf. In Ubuntu you have to install:
 
-  $ sudo apt-get install build-essential libsdl-image1.2-dev libsdl-ttf2.0-dev \
-    libsdl1.2-dev
+	$ sudo apt-get install build-essential libsdl-image1.2-dev libsdl-ttf2.0-dev \
+	libsdl1.2-dev
 
 Then, proceed with the usual spell:
 
-  $ ./configure
-  $ make
-  $ make install
+	$ ./configure
+	$ make
+	$ make install
 
 
-###### KNOWN BUGS ######
+## KNOWN BUGS ##
 
 - The movement of the blocks is a bit odd, you can't rotate a block when his resulting
   place will be out of the screen, that's why sometimes when a block is next to the
