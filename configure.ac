@@ -1,4 +1,4 @@
-# Copyright (C) 2006 Jorge Riquelme Santana <jriquelme@totex.cl>
+# Copyright (C) 2006 Jorge Riquelme Santana <jorge@larix.cl>
 #  
 # This file is free software; as a special exception the author gives
 # unlimited permission to copy and/or distribute it, with or without 
@@ -10,7 +10,7 @@
 
 AC_INIT([qbos],
         [0.11],
-        [Jorge Riquelme Santana jriquelme@totex.cl],
+        [Jorge Riquelme Santana jorge@larix.cl],
         [qbos])
 AC_CONFIG_AUX_DIR(config)
 AM_CONFIG_HEADER(config.h)

@@ -6,7 +6,7 @@
  * 
  *
  *
- * Copyright (C) 2006, Jorge Riquelme Santana <jriquelme@totex.cl>
+ * Copyright (C) 2006, Jorge Riquelme Santana <jorge@larix.cl>
  * 
  * QBOS is free software; you can redistribute it and/or 
  * modify it under the terms of the GNU General Public License 
